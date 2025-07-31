@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bust Buddy</title>
+		<link rel="stylesheet" href="/index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		
+		<nav>
+			<div class="nav-item" onclick="switchPage('home-section')">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path d="M21.45 10.275 12 3.187l-9.45 7.088.45 1.35h.75v8.625h16.5v-8.625H21l.45-1.35ZM5.25 18.75v-8.625L12 5.062l6.75 5.063v8.625H15v-4.417l-.75-.75h-4.5l-.75.75v4.417H5.25Zm5.25 0h3v-3.667h-3v3.667Z" fill="#fff" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+			</div>
+			<div class="nav-item" onclick="switchPage('add-section')">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path d="M19.5 12a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Zm1.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9.75" fill="#fff" fill-rule="evenodd" clip-rule="evenodd"/><path d="M12 8 V16" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M8 12 H16" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+			</div>
+		</nav>
+		
+		<section id="home-section" style="display:none;">
+			<h1>Home</h1>
+		</section>
+		
+		<section id="add-section" >
+			<h1>Add card</h1>
+			<div class="select-container" id="select-container">
+				<div class="top-wide">0</div><div class="top-wide">Special Card</div>
+				<div>1</div><div>2</div><div>3</div><div>4</div>
+				<div>5</div><div>6</div><div>7</div><div>8</div>
+				<div>9</div><div>10</div><div>11</div><div>12</div>
+			</div>
+		</section>
+		
+		<!-- Main Javascript -->
+		<script type="module" src="index.js"></script>
+		<!-- Fundamental Javascript -->
+		<script>
+			const pages = [...document.getElementsByTagName("section")];
+			function switchPage(id) {
+				pages.forEach(pg => pg.style.display = pg.id === id ? "block" : "none");
+			}
+		</script>
+	</body>
+</html>
