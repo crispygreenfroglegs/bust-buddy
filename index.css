@@ -52,6 +52,8 @@ h1 {
 }
 .select-container {
     padding: 5px;
+    max-width: inherit;
+    min-width: inherit;
     width: 100%;
     position: fixed;
     bottom: var(--nav-height);
@@ -65,7 +67,9 @@ h1 {
     background: var(--frosted-bg);
     display: grid;
     place-items: center;
-    padding: 10px 5px;
+    padding-block: 10px;
+    font-size: 1.2rem;
+    transition: 0.15s all;
 }
 .select-container div.top-wide {
     grid-column: span 2;
@@ -73,4 +77,5 @@ h1 {
 div.selected {
     background: var(--frosted-bg-selected);
     border: var(--frosted-border-selected);
+    font-weight: bold;
 }
