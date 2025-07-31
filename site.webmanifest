@@ -1,0 +1,16 @@
+{
+    "name": "Bust Buddy",
+    "short_name": "Bust Buddy",
+    "theme_color": "#196285",
+    "background_color": "#196285",
+    "orientation": "portrait",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "icons/bust-buddy-logo.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ]
+}
