@@ -7,7 +7,7 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "icons/bust-buddy-logo.svg",
+            "src": "/icons/bust-buddy-logo.svg",
             "sizes": "any",
             "type": "image/svg+xml",
             "purpose": "any maskable"

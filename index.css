@@ -19,6 +19,8 @@ body {
     min-height: 100vh;
     color: var(--clr-text);
     position: relative;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
     user-select: none;
 }
 nav {
